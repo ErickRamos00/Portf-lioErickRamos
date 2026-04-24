@@ -516,7 +516,7 @@ const Contact = () => (
         {[
           { label: "Email", value: "erickramosdeazevedo@gmail.com", icon: <Mail />, href: "mailto:erickramosdeazevedo@gmail.com" },
           { label: "WhatsApp", value: "(53) 98439-7497", icon: <MessageSquare />, href: "https://wa.me/5553984397497" },
-          { label: "LinkedIn", value: "Erick Ramos", icon: <Linkedin />, href: "https://www.linkedin.com/in/erick-azevedo-ramos/" },
+          { label: "LinkedIn", value: "Erick Azevedo", icon: <Linkedin />, href: "https://www.linkedin.com/in/erick-azevedo-ramos/" },
           { label: "GitHub", value: "ErickRamos00", icon: <Github />, href: "https://github.com/ErickRamos00" }
         ].map((contact, i) => (
           <motion.a
