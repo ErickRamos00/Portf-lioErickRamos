@@ -352,6 +352,7 @@ const Projects = () => {
       highlights: ["Catálogo temático", "Design responsivo", "Experiência imersiva"],
       image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
       repo: "https://github.com/ErickRamos00/nexus-gta-vi-store",
+      live: "https://nexus-gta-vi-store.vercel.app",
     },
     {
       title: "BarberOS",
@@ -360,6 +361,7 @@ const Projects = () => {
       highlights: ["Agenda inteligente", "Gestão financeira", "Autenticação segura"],
       image: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=2070&auto=format&fit=crop",
       repo: "https://github.com/ErickRamos00/BarberOS",
+      live: "https://barber-os-three.vercel.app",
     },
     {
       title: "Sistema Web – Prefeitura de Pelotas",
@@ -368,6 +370,7 @@ const Projects = () => {
       highlights: ["CRUD completo", "Organização em camadas", "Foco em usabilidade"],
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
       repo: null,
+      live: null,
     },
     {
       title: "Sistema Desktop de Gestão de Notas",
@@ -376,6 +379,7 @@ const Projects = () => {
       highlights: ["Login seguro", "Persistência de dados", "Separaração (MVC)"],
       image: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?q=80&w=1974&auto=format&fit=crop",
       repo: null,
+      live: null,
     },
     {
       title: "Sistema de Cálculo de Frete (POO + MVC)",
@@ -384,6 +388,7 @@ const Projects = () => {
       highlights: ["Uso de abstração", "Reutilização de código", "Conceitos de POO"],
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop",
       repo: null,
+      live: null,
     }
   ];
 
@@ -444,18 +449,33 @@ const Projects = () => {
                   </ul>
                 </div>
 
-                {project.repo && (
-                  <a
-                    href={project.repo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`Ver ${project.title} no GitHub`}
-                    className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-blue-500/20 bg-blue-600/10 px-4 py-3 text-[10px] font-bold uppercase tracking-[0.18em] text-blue-400 transition-all hover:border-blue-400/50 hover:bg-blue-600 hover:text-white"
-                  >
-                    <Github size={15} />
-                    Ver no GitHub
-                    <ExternalLink size={13} />
-                  </a>
+                {(project.live || project.repo) && (
+                  <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Abrir ${project.title}`}
+                        className="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-4 py-3 text-[10px] font-bold uppercase tracking-[0.18em] text-white transition-all hover:bg-blue-500"
+                      >
+                        <ExternalLink size={14} />
+                        Ver site
+                      </a>
+                    )}
+                    {project.repo && (
+                      <a
+                        href={project.repo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Ver ${project.title} no GitHub`}
+                        className="inline-flex items-center justify-center gap-2 rounded-xl border border-blue-500/20 bg-blue-600/10 px-4 py-3 text-[10px] font-bold uppercase tracking-[0.18em] text-blue-400 transition-all hover:border-blue-400/50 hover:bg-blue-600 hover:text-white"
+                      >
+                        <Github size={14} />
+                        GitHub
+                      </a>
+                    )}
+                  </div>
                 )}
               </div>
             </motion.div>
