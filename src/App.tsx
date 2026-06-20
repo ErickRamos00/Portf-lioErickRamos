@@ -369,27 +369,9 @@ const Projects = () => {
       tech: ["Java", "MySQL", "HTML", "CSS", "JavaScript"],
       highlights: ["CRUD completo", "Organização em camadas", "Foco em usabilidade"],
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
-      repo: null,
+      repo: "https://github.com/ErickRamos00/ProjetoRSTI",
       live: null,
     },
-    {
-      title: "Sistema Desktop de Gestão de Notas",
-      description: "Desenvolvimento de um aplicativo desktop utilizando Electron para gerenciamento de notas. O sistema conta com autenticação de usuários, operações completas de CRUD e integração com banco de dados MySQL, seguindo o padrão de arquitetura MVC.",
-      tech: ["Electron", "JavaScript", "MySQL"],
-      highlights: ["Login seguro", "Persistência de dados", "Separaração (MVC)"],
-      image: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?q=80&w=1974&auto=format&fit=crop",
-      repo: null,
-      live: null,
-    },
-    {
-      title: "Sistema de Cálculo de Frete (POO + MVC)",
-      description: "Projeto desenvolvido em Java com foco em Programação Orientada a Objetos e arquitetura MVC. O sistema calcula custos de frete com base em diferentes tipos de transporte, aplicando conceitos como herança, polimorfismo e classes abstratas.",
-      tech: ["Java"],
-      highlights: ["Uso de abstração", "Reutilização de código", "Conceitos de POO"],
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop",
-      repo: null,
-      live: null,
-    }
   ];
 
   return (
