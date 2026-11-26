@@ -34,7 +34,7 @@ const CONTACT = {
   email: "erickramosdeazevedo@gmail.com",
   whatsapp: "https://wa.me/5553984397497",
   whatsappLabel: "(53) 98439-7497",
-  linkedin: "https://www.linkedin.com/in/erick-azevedo-ramos/",
+  linkedin: "https://www.linkedin.com/in/erickazevedoo/",
   github: "https://github.com/ErickRamos00",
 };
 
@@ -651,7 +651,7 @@ const Contact = () => (
               {[
                 { icon: <Mail size={18} />, label: "E-mail", value: CONTACT.email, href: `mailto:${CONTACT.email}` },
                 { icon: <MessageSquare size={18} />, label: "WhatsApp", value: CONTACT.whatsappLabel, href: CONTACT.whatsapp },
-                { icon: <Linkedin size={18} />, label: "LinkedIn", value: "erick-azevedo-ramos", href: CONTACT.linkedin },
+                { icon: <Linkedin size={18} />, label: "LinkedIn", value: "erickazevedoo", href: CONTACT.linkedin },
                 { icon: <Github size={18} />, label: "GitHub", value: "ErickRamos00", href: CONTACT.github },
               ].map((c) => (
                 <li key={c.label}>
